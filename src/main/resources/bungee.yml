@@ -1,0 +1,3 @@
+name: api-example
+version: '${project.version}'
+main: com.shieldcommunity.example.Test
