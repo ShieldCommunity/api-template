@@ -1,5 +1,10 @@
 # NullCordX API example implementation
 
+## How to integrate
+You must have purchased NullCordX to have access to this broad and extensive API.
+Before nothing, remember that you need to change the path of the .jar file on the pom.xml file 
+On top of that, you must know that the plugin will work only with NullCordX if you impl this events
+
 ## Official Downloads
 
 * [Polymart page](https://polymart.org/resource/nullcordx.1476)
@@ -17,8 +22,3 @@
 
 In addition to the events, you have access to NullCordXImpl, then the ChannelWrapper, the kick type, the statistics, the language manager, the user manager, databases, messages and all the anti-bot on top of the database.
 They can be useful e.g. to avoid using reflection to access ChannelWrapper methods 
-
-## How to integrate
-You must have purchased NullCordX to have access to this broad and extensive API.
-Before nothing, remember that you need to change the path of the .jar file on the pom.xml file 
-On top of that, you must know that the plugin will work only with NullCordX if you impl this events
