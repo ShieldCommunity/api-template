@@ -6,11 +6,24 @@ public final class Test extends Plugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getLogger().info(
+                "Test plugin enabled"
+        );
+
+        getProxy().getPluginManager().registerListener(
+                this,
+                new com.shieldcommunity.example.events.HaProxyCatchEvent(this
+                ));
+        getProxy().getPluginManager().registerListener(
+                this,
+                new com.shieldcommunity.example.events.HandshakeCatchEvent(this)
+        );
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info(
+                "Test plugin disabled"
+        );
     }
 }
