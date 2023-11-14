@@ -1,5 +1,6 @@
 package com.shieldcommunity.example;
 
+import com.shieldcommunity.example.events.AttackDetectCatchEvent;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public final class Test extends Plugin {
@@ -16,7 +17,7 @@ public final class Test extends Plugin {
                 ));
         getProxy().getPluginManager().registerListener(
                 this,
-                new com.shieldcommunity.example.events.HandshakeCatchEvent(this)
+                new AttackDetectCatchEvent(this)
         );
     }
 

@@ -5,11 +5,11 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import net.shieldcommunity.nullcordx.api.events.AttackDetectedEvent;
 
-public class HandshakeCatchEvent implements Listener {
+public class AttackDetectCatchEvent implements Listener {
 
     private Test plugin;
 
-    public HandshakeCatchEvent(Test plugin) {
+    public AttackDetectCatchEvent(Test plugin) {
         this.plugin = plugin;
     }
 
