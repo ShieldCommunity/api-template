@@ -2,7 +2,7 @@
 
 ## How to integrate
 You must have purchased NullCordX to have access to this broad and extensive API.
-Before nothing, remember that you need to change the path of the .jar file on the pom.xml file 
+Before nothing, remember that you need to change the path of the .jar file on the build settings 
 On top of that, you must know that the plugin will work only with NullCordX if you impl this events
 
 ## Official Downloads
@@ -19,6 +19,7 @@ On top of that, you must know that the plugin will work only with NullCordX if y
 * NullCordXReloadEvent - Will be called after a successful reload of NullCordX
 * UserCheckedSuccessfullyEvent - Called only when the player has successfully passed the filter check and is ready to move to the server or be kicked. (depending on configuration)
 * UserFailedCheckEvent -  An event that is triggered whenever a player fails a check, please note that this event can also be triggered if KickType is SUCCESSFULLY
+* UserConnectedEvent -  called only when a player has connected to a filter and the filter is ready to send packets to the player
 
 In addition to the events, you have access to NullCordXImpl, then the ChannelWrapper, the kick type, the statistics, the language manager, the user manager, databases, messages and all the anti-bot on top of the database.
 They can be useful e.g. to avoid using reflection to access ChannelWrapper methods without relying on reflection
